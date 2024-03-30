@@ -1,0 +1,128 @@
+/*用element*/
+/* h1 {
+  color: rgba(123,123,123,0.5);
+}
+h2 {
+  color: green;
+} */
+
+/*用id 
+#fp{
+    color: blueviolet;
+}*/
+
+/*用class*/
+/* .bt{
+    color: chocolate;
+}
+.lt{
+    font-size: 28px;
+} */
+/* .redtext{
+  color: red;
+}
+.greentext{
+  color: green;
+} */
+
+/*element and class 並用*/
+/* a.lt{
+    font-size: 28px;
+} */
+
+/* div.link1 a{
+  color: red;
+} */
+
+/* 輸入格類型特別選擇 */
+/* input[type="text"]{
+  color: red;
+}
+
+按著時候變色
+input[type="text"]:focus{
+  color: green;
+} */
+/*active hover*/
+
+/* 每個p前面加東西 */
+/* p::before{
+  content: ">>";
+  color: hotpink;
+} */
+/* p的第一行大小 */
+/* p::first-line{
+  font-size:  32px;
+} */
+/* 反白顏色 */
+/* *::selection{
+  color: blueviolet;
+} */
+
+/* font-size-設置字體的大小。可以設置絕對單位或是相對單位。
+text-align-設置block element或table cell中的content的水平對齊位置。
+text-decoration-設置文本上裝飾線的外觀。
+line-height-通常用於設置文字行距。
+letter-spacing-設置文字水平間距。
+font-family-為所選元素指定一個或多個字體系列的優先列表。
+text-indent-設段落的內縮長度。
+font-weight-設定粗體字。 */
+/* h1{
+   至中 
+  text-align: center;
+} */
+/* 超連結不要底線 */
+/* a{
+  text-decoration: none;
+} */
+
+/* 字體 
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  background去mdn看 
+}*/
+h1 {
+  width: 500px;
+  height: 600px;
+  background-color: aqua;
+  border: 5px solid rgb(211, 13, 13);
+  padding-top: 10px;
+  margin: 10px;
+  opacity: 0.5;
+  animation-name: changecolor;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+} /*500 20 20 500-20-20-20-20=420*/
+table,
+th,
+tr,
+td {
+  border: 1px solid green;
+  border-collapse: collapse;
+}
+tr:hover {
+  background-color: aqua;
+}
+td,
+th {
+  padding: 2rem;
+}
+img:hover {
+  /*hover是滑鼠移上去*/
+  cursor: pointer;
+}
+@keyframes changecolor {
+  from {
+    background-color: aqua;
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    background-color: red;
+    top: 200px;
+    right: 0px;
+  }
+}

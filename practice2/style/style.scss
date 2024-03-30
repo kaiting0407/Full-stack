@@ -1,0 +1,7 @@
+@mixin s{
+color: red;
+}
+
+h1{
+@include s;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 5000px;
+      }
+      div.something {
+        height: 500px;
+        background-color: blue;
+      }
+      div.stick_box {
+        width: 100px;
+        height: 100px;
+        position: sticky;
+        top: 10px;
+        background-color: black;
+      }
+      div.container{
+        border: 3px solid black;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*flex-wrap是內縮網頁不會改變圖塊大小，而是換行*/
+        /*阿瓜使壞*/
+        justify-content: space-around;
+      }
+      div.container2{
+        border: 3px solid black;
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        
+        flex-direction: column;
+      }
+      .boxs{
+        flex-basis: 100;
+        flex-grow: 10;
+      }
+      .box{
+        flex: 1 1 100px;
+      }
+      .box1{
+        background-color: coral;
+        
+
+      }
+      .box2{
+        background-color: aqua;
+        align-self: flex-end;
+      
+      }
+      .box3{
+        background-color: lawngreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="something"></div>
+    <div class="stick_box"></div>
+    <div class="container">
+      <div class="box box1">box</div>
+      <div class="box box2">box</div>
+      <div class="box box3">box</div>
+    </div>
+    <div class="container2">
+      <div class="boxs box1">box</div>
+      <div class="boxs box2">box</div>
+      <div class="boxs box3">box</div>
+    </div>
+  </body>
+</html>
