@@ -62,4 +62,13 @@ function addUpTo(n) {
   }
   return result;
 }*/
-console.log("11");
+// console.log("11");
+let a = document.querySelector(".a");
+let b = document.querySelector(".b");
+a.addEventListener("click", function () {
+  alert("Click 藍");
+});
+b.addEventListener("click", function(e) {
+  e.stopPropagation();
+  alert("Click 紅");
+});
